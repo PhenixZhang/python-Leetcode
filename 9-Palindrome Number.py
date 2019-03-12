@@ -54,3 +54,8 @@ class Solution:
             return False
         else:
             return True
+
+# by others
+class Solution(object):
+    def isPalindrome(self, x):
+        return str(x) == str(x)[::-1]
