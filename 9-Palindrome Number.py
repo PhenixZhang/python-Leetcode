@@ -23,7 +23,7 @@ class Solution(object):
         if x<0:
             return False
         else:
-            if x == eval(''.join((reversed(str(x))))):
+            if x == int(''.join((reversed(str(x))))):
                 return True
             else:
                 return False
