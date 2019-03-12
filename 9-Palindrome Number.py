@@ -27,8 +27,20 @@ class Solution(object):
                 return True
             else:
                 return False
-            
-
+# by myself            
+class Solution:
+    def isPalindrome(self, x):
+        r = list(str(x))
+        length = len(r)
+        if length <= 2:
+            return r[0] == r[-1]
+        for i in range(length // 2 + 1):
+            if r[i] == r[-(i+1)]:
+                pass
+            else:
+                return False
+        return True
+    
 # others
 class Solution:
     def isPalindrome(self, x):
