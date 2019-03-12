@@ -35,3 +35,11 @@ class Solution(object):
             look_up[num] = i
         return []
 
+# priority
+class Solution:
+    def twoSum(self, nums, target):
+        mirrors = {}
+        for idx,num in enumerate(nums):
+            if num in mirrors:
+                return [mirrors[num],idx]
+            mirrors[target - num] = idx
