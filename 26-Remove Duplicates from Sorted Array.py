@@ -11,7 +11,13 @@
 你不需要考虑数组中超出新长度后面的元素。
 
 '''
-
+# by myself
+class Solution:
+    def removeDuplicates(self, nums):
+        res = []
+        for i in range(len(nums)-2,-1,-1):
+            if nums[i] == nums[i+1]:
+               nums.pop(i+1)
 
 #by myself
 class Solution:
