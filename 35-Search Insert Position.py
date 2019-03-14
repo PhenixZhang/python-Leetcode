@@ -18,6 +18,15 @@
 # by myself
 class Solution:
     def searchInsert(self, nums, target):
+        lens = len(nums)
+        for i in range(lens):
+            if nums[i] >= target:
+                return i
+        return lens
+
+# by myself
+class Solution:
+    def searchInsert(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
