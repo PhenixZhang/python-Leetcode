@@ -28,6 +28,11 @@ class Solution:
             b.append(eval(i))
         return b
 
+# by myself
+class Solution:
+    def plusOne(self, digits):
+        return list(map(int,str(int(''.join(map(str,digits))) + 1)))
+    
 # by others
 class Solution(object):
     def plusOne(self, digits):
