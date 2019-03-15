@@ -30,6 +30,10 @@ class Solution:
                 c += '0'
         return c.lstrip('0')
 
+# by myself
+class Solution:
+    def addBinary(self, a, b):
+        return bin(int(a,2)+int(b,2))[2:]
 
 # by others
 class Solution(object):
