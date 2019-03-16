@@ -32,6 +32,14 @@
 输出: false
 '''
 
+# by myself
+class Solution:
+    def isSameTree(self, p, q):
+        if p and q and p.val == q.val:
+            return self.isSameTree(p.left,q.left) and self.isSameTree(p.right,q.right)
+        if not p:
+            return not q
+        return False
 
 # by others
 class Solution:
